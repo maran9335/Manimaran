@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+   color:wheat; 
+}
+
+                /* header*/
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://img.freepik.com/free-vector/gradient-black-technology-background_23-2149209060.jpg?size=626&ext=jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position:center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    list-style: none;
+     display: inline-block;
+    text-decoration: none;
+    margin: 10px 10px;
+    
+ }
+ nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: aliceblue;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+.header-text{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+                                    /*-------about-----*/
+#about{
+    padding: 80px 0;
+    color: yellow;
+}                                  
